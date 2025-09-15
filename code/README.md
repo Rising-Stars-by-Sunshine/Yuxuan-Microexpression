@@ -1,6 +1,6 @@
 This repository implements a workflow for Facial Micro-Expression Recognition with a focus on improving predictions for minority classes (e.g., fear, disgust). The methodology consists of the following steps:
 
-part1: Basic EDA
+Part1: Basic EDA
 Before feature extraction, basic exploratory data analysis (EDA) was performed:
 Verified dataset structure and image dimensions.
 Visualized sample images to ensure correct preprocessing.
