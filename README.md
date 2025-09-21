@@ -49,3 +49,36 @@ Collective benefit: Research aims to support education and healthcare applicatio
 Authority to control: Dataset licensing and participant consent are acknowledged.
 Responsibility: Results emphasize transparency and report limitations, avoiding misuse in surveillance contexts.
 Ethics: Bias and fairness are critically evaluated, particularly regarding minority emotion classes.
+
+## 📘 Notebooks
+1. Prediction_of__Microexpression_basic_EDA_ipynb_.ipynb
+Performs basic exploratory data analysis (EDA) on datasets.
+Includes class distribution plots and imbalance checks.
+Provides baseline evaluation metrics (Accuracy, Macro-F1, Weighted-F1).
+
+2. Explanation_NLP_network_analysis.ipynb
+Uses NLP (word cloud, keyword frequency) and network analysis (semantic co-occurrence networks) to map research themes.
+Identifies central and peripheral terms in micro-expression literature.
+Connects findings to broader research challenges (dataset bias, subtlety of low-frequency emotions).
+
+## Results Summary
+Baseline (ResNet18, no SMOTE): High accuracy but biased toward majority classes.
+PCA + SMOTE: Lower accuracy, but better recall and Macro-F1 for minority classes (fear, disgust).
+AutoML (FLAML): Best overall accuracy but less interpretable.
+Logistic Regression: Competitive performance with highest interpretability.
+
+## Acknowledgments and Revisions
+This project benefited greatly from the constructive feedback of reviewers, whose comments guided substantial improvements in both methodology and presentation. Specifically:
+
+Reviewer Feedback Integration
+Expanded rationale for selecting ResNet18 compared with other CNN architectures (ResNet50, VGG, MobileNet), clarifying the trade-off between computational efficiency and feature richness.
+Enhanced dataset transparency by explicitly listing the three datasets used, documenting Google Images sourcing protocols, and adding a summary table of dataset characteristics.
+Improved terminology clarity with explicit definitions and citations for Macro-F1, Weighted-F1, PCA, SMOTE, and CNN features.
+Strengthened ethical safeguards by specifying informed consent procedures, withdrawal rights, cultural adaptation of materials, and requirements for bias auditing in deployed systems.
+Added a System Configuration section in the README for full reproducibility (Python version, Colab environment, dependencies).
+Expanded figure captions to highlight logical relationships between technical methods, challenges, and ethical concerns.
+
+Acknowledgments
+I would like to thank Prof. Zhang and Jingting for their thoughtful and detailed reviews, which significantly improved the rigor, clarity, and ethical grounding of this work. Their feedback shaped both the updated manuscript and this repository’s documentation.
+
+These revisions ensure that the project is methodologically transparent, ethically responsible, and aligned with both FAIR and CARE principles.
